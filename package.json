@@ -11,7 +11,10 @@
     "start:watch": "nodemon server.js"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "watchPathIgnorePatterns": [
+      "store"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -27,6 +30,7 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3",
+    "shortid": "^2.2.16",
     "supertest": "^6.1.6"
   }
 }
