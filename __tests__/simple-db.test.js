@@ -2,10 +2,10 @@ const { rm, mkdir } = require('fs/promises');
 const SimpleDb = require('../lib/simple-db');
 
 describe('simple db', () => {
-  const rootDir = './__tests__/store';
+  const rootDir = '../store';
 
   beforeEach(async () => {
-    await rm(rootDir, { force: true, recursive: true });
+    // await rm(rootDir, { force: true, recursive: true });
     await mkdir(rootDir, { recursive: true });
   });
 
