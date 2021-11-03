@@ -5,7 +5,7 @@ describe('simple db', () => {
   const rootDir = '../store';
 
   beforeEach(async () => {
-    // await rm(rootDir, { force: true, recursive: true });
+    await rm(rootDir, { force: true, recursive: true });
     await mkdir(rootDir, { recursive: true });
   });
 
