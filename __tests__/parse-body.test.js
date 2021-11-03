@@ -16,7 +16,3 @@ it('returns deserialized body from req emitted events', async () => {
   expect(body).toEqual({ foo: 'bar' });
 
 });
-
-it('dummy test', async () => {
-  expect(1).toEqual(1);
-});
