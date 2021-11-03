@@ -28,10 +28,10 @@ describe('simple db', () => {
     expect(got).toEqual(mood);
   });
 
-  it('returns null for non-existant id', async () => {
+  it('returns null for non-existent id', async () => {
     const db = new SimpleDb(rootDir);
 
-    const got = await db.get('non-existant');
+    const got = await db.get('non-existent');
     expect(got).toBeNull();
   });
 
